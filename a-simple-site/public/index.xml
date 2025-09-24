@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>hi, paul here</title><link>https://github.com/paulkroe/paulkroe.github.io/</link><description>Recent content on hi, paul here</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 22 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://github.com/paulkroe/paulkroe.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>LLM post-training with GRPO</title><link>https://github.com/paulkroe/paulkroe.github.io/posts/en/grpo/</link><pubDate>Mon, 22 Sep 2025 16:53:53 -0400</pubDate><guid>https://github.com/paulkroe/paulkroe.github.io/posts/en/grpo/</guid><description>&lt;p&gt;WIP; coming soon&lt;/p&gt;</description></item><item><title>LLM post-training with GRPO</title><link>https://github.com/paulkroe/paulkroe.github.io/projects/en/grpo/</link><pubDate>Mon, 22 Sep 2025 16:53:53 -0400</pubDate><guid>https://github.com/paulkroe/paulkroe.github.io/projects/en/grpo/</guid><description>&lt;p&gt;Inspired by the &lt;a href="https://github.com/McGill-NLP/nano-aha-moment/blob/main/nano_r1.ipynb"&gt;nano-aha-moment&lt;/a&gt; project, I created a minimal, easy-to-understand implementation of Group Relative Policy Optimization (GRPO) for post-training large language models.&lt;/p&gt;
+&lt;p&gt;This project fine-tunes Qwen2.5 3B for reasoning tasks, focusing on simplicity and clarity rather than maximal performance.&lt;br&gt;
+Part of this is an independent Jupyter notebook that runs on an 80GB A100 GPU, producing interesting results in under an hour and offering a clear, from-scratch introduction to GRPO and RL for LLMs.&lt;/p&gt;</description></item><item><title>DQN for Atari Breakout from Scratch</title><link>https://github.com/paulkroe/paulkroe.github.io/posts/en/dqn-atari/</link><pubDate>Wed, 10 Sep 2025 16:53:53 -0400</pubDate><guid>https://github.com/paulkroe/paulkroe.github.io/posts/en/dqn-atari/</guid><description>&lt;p&gt;WIP; coming soon&lt;/p&gt;</description></item><item><title>DQN for Atari Breakout from Scratch</title><link>https://github.com/paulkroe/paulkroe.github.io/projects/en/dqn-atari/</link><pubDate>Wed, 10 Sep 2025 16:53:53 -0400</pubDate><guid>https://github.com/paulkroe/paulkroe.github.io/projects/en/dqn-atari/</guid><description>&lt;p&gt;&lt;img src="https://github.com/paulkroe/paulkroe.github.io/gifs/dqn_epoch_500.gif" alt="DQN agent playing Atari Breakout"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Deep Q-Networks (DQNs)&lt;/strong&gt; were a milestone in deep reinforcement learning, famously solving Atari games directly from pixels.&lt;br&gt;
+For this project, I built a &lt;strong&gt;from-scratch implementation&lt;/strong&gt; of key RL techniques to train an agent to play &lt;strong&gt;Atari Breakout&lt;/strong&gt;, including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Deep Q-Learning&lt;/strong&gt; – iconic approach for learning Atari games directly from pixels&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Double Q-Learning&lt;/strong&gt; – reducing overestimation bias in Q-learning&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Prioritized Replay&lt;/strong&gt; – sampling important experiences more frequently&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I noticed there are surprisingly few clear explanations of how to implement these ideas step-by-step.
+Thus, I tried to write something useful and if you are interested, feel free to read the blog post &lt;a href="https://github.com/paulkroe/paulkroe.github.io/posts/en/dqn-atari/"&gt;here&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Ideological Bias Auditing in LLMs</title><link>https://github.com/paulkroe/paulkroe.github.io/projects/en/bias-auditing/</link><pubDate>Thu, 07 Aug 2025 16:53:53 -0400</pubDate><guid>https://github.com/paulkroe/paulkroe.github.io/projects/en/bias-auditing/</guid><description>&lt;p&gt;We introduce a lightweight way to &lt;strong&gt;audit ideological steering in large language models&lt;/strong&gt; without needing model internals. The core idea: for a given sensitive topic (e.g., politics, religion), we periodically ask a fixed set of open-ended prompts, embed the model’s responses, and use a &lt;strong&gt;permutation test on the cosine similarity of mean embeddings&lt;/strong&gt; to flag &lt;strong&gt;distributional shifts&lt;/strong&gt;. If the distribution moves, that’s evidence the model’s behavior (potentially via system-prompt changes) has drifted.&lt;/p&gt;</description></item><item><title>Streaminator: Multi-Answer Speculative Decoding</title><link>https://github.com/paulkroe/paulkroe.github.io/projects/en/streaminator/</link><pubDate>Thu, 08 May 2025 16:53:53 -0400</pubDate><guid>https://github.com/paulkroe/paulkroe.github.io/projects/en/streaminator/</guid><description>&lt;p&gt;Large language models are powerful, but generating high-quality answers can be both slow and compute-intensive. &lt;strong&gt;Streaminator&lt;/strong&gt; explores a new way to make this process faster and smarter by combining two ideas:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Speculative Decoding&lt;/strong&gt; – using a lightweight &amp;ldquo;draft&amp;rdquo; model to propose multiple tokens at once, speeding up the normally sequential generation process.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multi-Answer Inference&lt;/strong&gt; – sampling multiple solutions per prompt and selecting the best one, a technique that greatly improves performance on reasoning tasks.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Our key insight: when generating multiple answers for the &lt;em&gt;same prompt&lt;/em&gt;, the speculative model can &lt;strong&gt;learn from earlier answers&lt;/strong&gt; to improve its next proposals. Instead of relying on one general-purpose speculator, Streaminator trains a small, prompt-specific model on-the-fly, conditioning it on previous outputs.&lt;/p&gt;</description></item><item><title>Minimal C++ Autograd Engine</title><link>https://github.com/paulkroe/paulkroe.github.io/projects/en/autograd/</link><pubDate>Fri, 17 Jan 2025 16:53:53 -0400</pubDate><guid>https://github.com/paulkroe/paulkroe.github.io/projects/en/autograd/</guid><description>&lt;p&gt;Automatic differentiation is a core building block in modern deep learning frameworks. But many existing autodiff systems are embedded in large, complex libraries. &lt;strong&gt;cppautograd&lt;/strong&gt; is a lightweight, from-scratch engine in C++ that demonstrates how to build the essentials of an automatic differenciation engine, while addressing practical performance and memory concerns.&lt;/p&gt;
+&lt;h2 id="what-is-cppautograd"&gt;What Is cppautograd?&lt;/h2&gt;
+&lt;p&gt;cppautograd provides:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A tensor type supporting scalar and multidimensional operations&lt;/li&gt;
+&lt;li&gt;Gradient propagation (backward) for operations&lt;/li&gt;
+&lt;li&gt;And the design is inspired by LibTorch to make it intuitive and minimalistic&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The goal is educational clarity while maintaining decent performance. Making this production ready would require numerous performance improvements and a significant amout of work.&lt;/p&gt;</description></item><item><title>Torchify: Compiling a json-like file to a torch.nn.Module</title><link>https://github.com/paulkroe/paulkroe.github.io/projects/en/torchify/</link><pubDate>Sat, 19 Oct 2024 16:53:53 -0400</pubDate><guid>https://github.com/paulkroe/paulkroe.github.io/projects/en/torchify/</guid><description>&lt;p&gt;Torchify is a small compiler project that reads a high-level specification of neural network architectures and control logic, then emits equivalent PyTorch code — complete with optimizations like constant folding, dead-code elimination, and common subexpression elimination.&lt;/p&gt;
+&lt;h2 id="motivation--goal"&gt;Motivation &amp;amp; Goal&lt;/h2&gt;
+&lt;p&gt;When defining neural networks or model architectures by hand, boilerplate abounds. Torchify automatically generates PyTorch modules from more declarative specifications. The idea is to enable:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Faster prototyping: write compact specification DSL instead of full Python classes&lt;/li&gt;
+&lt;li&gt;Maintainability: changes in architecture or control logic are easier to express&lt;/li&gt;
+&lt;li&gt;Optimizations: perform static analysis and simplification before runtime&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="design--pipeline"&gt;Design &amp;amp; Pipeline&lt;/h2&gt;
+&lt;p&gt;Torchify’s architecture follows a classic compiler pattern:&lt;/p&gt;</description></item><item><title>Schokoban: Monte Carlo Tree Search for Solving Sokoban</title><link>https://github.com/paulkroe/paulkroe.github.io/projects/en/schokoban/</link><pubDate>Thu, 01 Aug 2024 16:53:53 -0400</pubDate><guid>https://github.com/paulkroe/paulkroe.github.io/projects/en/schokoban/</guid><description>&lt;p&gt;Schokoban is a Sokoban solver, which unlike state-of-the-art Sokoban solvers that often use heuristic or search-based algorithms, experiments with applying &lt;strong&gt;Monte Carlo Tree Search (MCTS)&lt;/strong&gt; to this classic puzzle game.&lt;/p&gt;
+&lt;p&gt;The project explores how to adapt MCTS to handle the &lt;strong&gt;unique challenges of Sokoban&lt;/strong&gt;, such as redundant states and branching complexity. A key innovation is a new method for managing redundant states within the tree search, resulting in substantial performance improvements over a baseline approach.&lt;/p&gt;</description></item><item><title>Classification using Naive Bayes</title><link>https://github.com/paulkroe/paulkroe.github.io/posts/en/naive-bayes/</link><pubDate>Tue, 12 Jul 2022 16:53:53 -0400</pubDate><guid>https://github.com/paulkroe/paulkroe.github.io/posts/en/naive-bayes/</guid><description>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Naive Bayes classifiers are simple yet powerful supervised learning algorithms commonly used for text classification tasks such as sentiment analysis, spam detection, language identification, and more. In this blog post, we will explore the theory behind Naive Bayes classifiers and implement one to categorize text in the &lt;a href="http://qwone.com/~jason/20Newsgroups/"&gt;20 Newsgroups dataset&lt;/a&gt;. When first learning about Naive Bayes, I found the book &lt;a href="https://web.stanford.edu/~jurafsky/slp3/ed3book.pdf"&gt;&lt;em&gt;Speech and Language Processing&lt;/em&gt;&lt;/a&gt; by Daniel Jurafsky and James H. Martin extremely helpful.&lt;/p&gt;</description></item><item><title/><link>https://github.com/paulkroe/paulkroe.github.io/project-page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://github.com/paulkroe/paulkroe.github.io/project-page/</guid><description>&lt;style&gt;
+
+/* quick page-scoped styles — move to your theme CSS later */
+.projects-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+ gap: 1.25rem;
+ margin-top: 1.5rem;
+}
+.project-card {
+ display: flex;
+ flex-direction: column;
+ text-decoration: none;
+ color: inherit;
+ background: var(--page-bg); /* matches theme */
+ border: 3px solid #0d1b26;
+ border-radius: 10px;
+ padding: 1.25rem;
+ align-items: center;
+ transition: transform .18s ease, box-shadow .18s ease;
+ box-shadow: 0 4px 0 rgba(13,27,38,0.06);
+ padding: 1.5rem;
+}
+.project-card:hover {
+ transform: translateY(-6px);
+ border-color: var(--light-secondary-color); /* light accent on hover */
+ box-shadow: 0 12px 30px rgba(2,16,26,0.12);
+}
+.card-media {
+ width: 100%;
+ max-width: 300px;
+ margin-bottom: 1rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.card-media img {
+ width: 100%;
+ max-height: 250px;
+ object-fit: contain;
+ border-radius: 8px;
+ background: transparent;
+}
+
+.project-card h3 {
+ margin: 0.25rem 0 0.35rem;
+ font-size: 1.25rem;
+ text-align: center;
+}
+.project-card p {
+ margin: 0;
+ font-size: 0.8rem;
+ text-align: center;
+ color: inherit;
+ font-weight: 600;
+}
+&lt;/style&gt;
+&lt;div class="projects-grid"&gt;
+ &lt;a class="project-card" href="https://github.com/paulkroe/paulkroe.github.io/projects/en/dqn-atari/"&gt;
+ &lt;div class="card-media"&gt;
+ &lt;img src="https://github.com/paulkroe/paulkroe.github.io/gifs/dqn_epoch_500.gif" alt="Atari Breakout Preview" loading="lazy"&gt;
+ &lt;/div&gt;
+ &lt;h3&gt;DQN for Atari Breakout&lt;/h3&gt;
+ &lt;p&gt;From scratch implementation of some iconic RL techniques for solving Atari Games&lt;/p&gt;</description></item></channel></rss>
