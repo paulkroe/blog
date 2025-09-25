@@ -69,7 +69,7 @@ title = "hi, paul here"
   """
 
   
-  description = "Sky above, sand below and peace within"
+  description = ""
 
   footer = "The Marauders"
   metaKeywords = ["blog", "gokarna", "hugo"]
