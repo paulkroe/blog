@@ -98,7 +98,7 @@ title: ""
 
   <a class="project-card" href="/projects/en/schokoban/">
     <div class="card-media">
-      <img src="/images/schokoban.png" alt="Schokoban Preview" loading="lazy">
+      <img src="/images/schokoban-cartoon.png" alt="Schokoban Preview" loading="lazy">
     </div>
     <h3>Schokoban</h3>
     <p>Monte Carlo Tree Search for Solving Sokoban</p>
