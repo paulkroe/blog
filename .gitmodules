@@ -2,3 +2,7 @@
 	path = blog/public
 	url = https://github.com/paulkroe/paulkroe.github.io
 	branch = main
+[submodule "a-simple-site/public"]
+	path = a-simple-site/public
+	url = https://github.com/paulkroe/paulkroe.github.io.git
+	branch = main

@@ -1,0 +1,142 @@
+baseURL = 'https://github.com/paulkroe/paulkroe.github.io'
+defaultContentLanguage = "en"
+enableEmoji = true
+enableRobotsTXT = true
+languageCode = "en"
+# Choose one of emacs, trac or perldoc
+pygmentsStyle = "monokai"
+theme = "gokarna-hugo"
+
+title = "hi, paul here"
+
+[params]
+  avatarAltText = "avatar"
+  avatarSize = "size-xl"
+  avatarURL = "/paulkroe/paulkroe.github.io/images/avatar.jpeg"
+
+  customHeadHTML = """
+    <!-- KaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+          ],
+          throwOnError : false
+        });
+      });
+    </script>
+    
+    <!-- Custom Description Styling -->
+    <style>
+      .home-about h2 {
+        font-size: 1.1em !important;
+        line-height: 1.6;
+        font-weight: 300;
+        margin-bottom: 1.5em;
+      }
+      
+      /* Constrain text width and center it */
+      .home-about {
+        max-width: 750px !important;
+        margin: 0 auto !important;
+        padding: 0 20px !important;
+      }
+      
+      .home-about p {
+        margin-bottom: 1.2em;
+        text-align: left;
+      }
+    </style>
+    
+    <!-- Replace Description with Formatted Text -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var descElement = document.querySelector(".home-about h2");
+        if (descElement) {
+          descElement.innerHTML = 
+            "<p>I'm passionate about machine learning, with a particular focus on (model-based) reinforcement learning. My current research explores causal reinforcement learning.</p>" +
+            "<p>I'm also interested in AI safety. At the <a href='https://www.cualignment.org/' target='_blank' style='color: #007acc; text-decoration: underline;'>Columbia AI Alignment Club</a>, I help organize research efforts and projects centered around making AI systems safer, more reliable, and better understood. " +
+            "Personally, I'm working on mechanistic interpretability trying to understand neural network internals.</p>" +
+            "<p>If would like to discuss any of these topics, would like to collaborate, or just have a chat, feel free to reach out.</p>";
+        }
+      });
+    </script>
+  """
+
+  
+  description = "Sky above, sand below and peace within"
+
+  footer = "The Marauders"
+  metaKeywords = ["blog", "gokarna", "hugo"]
+  showBackToTopButton = true # true or false for "back to top" button on posts and pages
+
+  socialIcons = [
+    # {name = "x", url = "https://example.com"},
+    {name = "linkedin", url = "https://www.linkedin.com/in/paul-kroeger/"},
+    # {name = "stackoverflow", url = "https://discuss.pytorch.org/u/paulk/summary"},
+    {name = "github", url = "https://github.com/paulkroe"},
+    # {name = "dribbble", url = "https://example.com"},
+    # {name = "instagram", url = "https://example.com"},
+    # {name = "twitch", url = "https://example.com"},
+    # {name = "email", url = "mailto:example@example.com"}
+  ]
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pre = "<span data-feather='home'></span>"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Posts"
+    pre = "<span data-feather='book'></span>"
+    url = "/posts/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Projects"
+    pre = "<span data-feather='code'></span>"
+    url = "/project-page/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Tags"
+    pre = "<span data-feather='tag'></span>"
+    url = "/tags/"
+    weight = 4
+
+  [[menu.main]]
+    identifier = "github"
+    pre = "<span data-feather='github'></span>"
+    url = "https://github.com/paulkroe"
+    weight = 5
+
+  #[[menu.main]]
+  #  identifier = "buymeacoffee"
+  #  pre = "<span data-feather='coffee'></span>"
+  #  url = "https://www.buymeacoffee.com/avijitgupta"
+  #  weight = 6
+
+  # [[menu.main]]
+  #  identifier = "rss"
+  #  pre = "<span data-feather='rss'></span>"
+  #  url = "/index.xml"
+  #  weight = 7
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 4
+    ordered = false
+    [markup.goldmark]
+      [markup.goldmark.renderer]
+        unsafe = true
+
+[minify]
+    minifyOutput = true
