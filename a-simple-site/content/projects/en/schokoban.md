@@ -17,5 +17,5 @@ While the solver’s main goal is *experimental research* rather than setting ne
 If you want to learn more, see performance results, feel free to explore the code on GitHub:
 [https://github.com/paulkroe/Schokoban](https://github.com/paulkroe/Schokoban)
 
-![Example Sokoban level](/paulkroe/paulkroe.github.io/images/schokoban.png)
+![Example Sokoban level](/images/schokoban.png)
 *Example Sokoban level from by [Skinner](http://www.abelmartin.com/rj/sokobanJS/Skinner/David%20W.%20Skinner%20-%20Sokoban.htm).*

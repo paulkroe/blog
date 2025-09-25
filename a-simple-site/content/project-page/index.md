@@ -64,57 +64,57 @@ title: ""
 
 <div class="projects-grid">
 
-  <a class="project-card" href="/paulkroe/paulkroe.github.io/projects/en/dqn-atari/">
+  <a class="project-card" href="/projects/en/dqn-atari/">
     <div class="card-media">
-      <img src="/paulkroe/paulkroe.github.io/gifs/dqn_epoch_500.gif" alt="Atari Breakout Preview" loading="lazy">
+      <img src="/gifs/dqn_epoch_500.gif" alt="Atari Breakout Preview" loading="lazy">
     </div>
     <h3>DQN for Atari Breakout</h3>
     <p>From scratch implementation of some iconic RL techniques for solving Atari Games</p>
   </a>
 
-  <a class="project-card" href="/paulkroe/paulkroe.github.io/projects/en/grpo/">
+  <a class="project-card" href="/projects/en/grpo/">
     <div class="card-media">
-      <img src="/paulkroe/paulkroe.github.io/images/grpo-reward.png" alt="GRPO Preview" loading="lazy">
+      <img src="/images/grpo-reward.png" alt="GRPO Preview" loading="lazy">
     </div>
     <h3>Mathematical Reasoning with GRPO</h3>
     <p>RL-based post-training method for increasing reasoning capabilities in LLMs</p>
   </a>
   
-  <a class="project-card" href="/paulkroe/paulkroe.github.io/projects/en/bias-auditing/">
+  <a class="project-card" href="/projects/en/bias-auditing/">
     <div class="card-media">
-      <img src="/paulkroe/paulkroe.github.io/images/bias-auditing.jpg" alt="Bias Auditing Preview" loading="lazy">
+      <img src="/images/bias-auditing.jpg" alt="Bias Auditing Preview" loading="lazy">
     </div>
     <h3>Don't Change My View!</h3>
     <p>Ideological Bias Auditing in LLMs</p>
   </a>
 
-  <a class="project-card" href="/paulkroe/paulkroe.github.io/projects/en/streaminator/">
+  <a class="project-card" href="/projects/en/streaminator/">
     <div class="card-media">
-      <img src="/paulkroe/paulkroe.github.io/images/streaminator.png" alt="Streaminator Preview" loading="lazy">
+      <img src="/images/streaminator.png" alt="Streaminator Preview" loading="lazy">
     </div>
     <h3>Streaminator</h3>
     <p>Multi-Answer Speculative Decoding for effficent LLM Inference</p>
   </a>
 
-  <a class="project-card" href="/paulkroe/paulkroe.github.io/projects/en/schokoban/">
+  <a class="project-card" href="/projects/en/schokoban/">
     <div class="card-media">
-      <img src="/paulkroe/paulkroe.github.io/images/schokoban.png" alt="Schokoban Preview" loading="lazy">
+      <img src="/images/schokoban.png" alt="Schokoban Preview" loading="lazy">
     </div>
     <h3>Schokoban</h3>
     <p>Monte Carlo Tree Search for Solving Sokoban</p>
   </a>
   
-  <a class="project-card" href="/paulkroe/paulkroe.github.io/projects/en/autograd/">
+  <a class="project-card" href="/projects/en/autograd/">
     <div class="card-media">
-      <img src="/paulkroe/paulkroe.github.io/images/autograd.png" alt="C++ Autograd Preview" loading="lazy">
+      <img src="/images/autograd.png" alt="C++ Autograd Preview" loading="lazy">
     </div>
     <h3>C++ Autograd</h3>
     <p>Basic C++ Autograd Engine written in C++</p>
   </a>
   
-  <a class="project-card" href="/paulkroe/paulkroe.github.io/projects/en/torchify/">
+  <a class="project-card" href="/projects/en/torchify/">
     <div class="card-media">
-      <img src="/paulkroe/paulkroe.github.io/images/torchify.png" alt="Torchify Preview" loading="lazy">
+      <img src="/images/torchify.png" alt="Torchify Preview" loading="lazy">
     </div>
     <h3>Torchify</h3>
     <p>Compiling a json-like file to a torch.nn.Module</p>

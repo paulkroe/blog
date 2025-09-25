@@ -18,6 +18,6 @@ Our key insight: when generating multiple answers for the *same prompt*, the spe
 
 The system includes performance optimizations like **KV caching** and **continuous batching**, enabling smooth, high-throughput generation on GPUs. In experiments on the GSM8K math reasoning dataset, this approach increased speculative token acceptance rates by **10 percentage points** after just three generations—showing that even a simple n-gram speculator can meaningfully guide the decoding process.
 
-![acceptance rates](/paulkroe/paulkroe.github.io/images/streaminator-acceptance.jpeg)
+![acceptance rates](/images/streaminator-acceptance.jpeg)
 
 Find a more detailed explanation and the full implementation on [GitHub](https://github.com/paulkroe/Streaminator).

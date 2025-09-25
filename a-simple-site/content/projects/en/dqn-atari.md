@@ -9,7 +9,7 @@ title: "DQN for Atari Breakout from Scratch"
 type: "post"
 ---
 
-![DQN agent playing Atari Breakout](/paulkroe/paulkroe.github.io/gifs/dqn_epoch_500.gif)
+![DQN agent playing Atari Breakout](/gifs/dqn_epoch_500.gif)
 
 **Deep Q-Networks (DQNs)** were a milestone in deep reinforcement learning, famously solving Atari games directly from pixels.  
 For this project, I built a **from-scratch implementation** of key RL techniques to train an agent to play **Atari Breakout**, including:
@@ -19,7 +19,7 @@ For this project, I built a **from-scratch implementation** of key RL techniques
 - **Prioritized Replay** – sampling important experiences more frequently
 
 I noticed there are surprisingly few clear explanations of how to implement these ideas step-by-step.
-Thus, I tried to write something useful and if you are interested, feel free to read the blog post [here](/paulkroe/paulkroe.github.io/posts/en/dqn-atari/).
+Thus, I tried to write something useful and if you are interested, feel free to read the blog post [here](/posts/en/dqn-atari/).
 
 You can also explore the code on [GitHub](https://github.com/paulkroe/atari-rl).
 

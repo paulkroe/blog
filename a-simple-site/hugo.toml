@@ -1,4 +1,4 @@
-baseURL = 'https://github.com/paulkroe/paulkroe.github.io'
+baseURL = "https://paulkroe.github.io/"
 defaultContentLanguage = "en"
 enableEmoji = true
 enableRobotsTXT = true
@@ -12,7 +12,7 @@ title = "hi, paul here"
 [params]
   avatarAltText = "avatar"
   avatarSize = "size-xl"
-  avatarURL = "/paulkroe/paulkroe.github.io/images/avatar.jpeg"
+  avatarURL = "/images/avatar.jpeg"
 
   customHeadHTML = """
     <!-- KaTeX -->

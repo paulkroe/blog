@@ -15,4 +15,4 @@ Part of this is an independent Jupyter notebook that runs on an 80GB A100 GPU, p
 
 Check out the code [here](https://github.com/paulkroe/llm-rl).
 
-I also wrote a brief [blog post](/paulkroe/paulkroe.github.io/posts/en/grpo/) introducing RL for LLMs and walking through GRPO step by step.  
+I also wrote a brief [blog post](/posts/en/grpo/) introducing RL for LLMs and walking through GRPO step by step.  
