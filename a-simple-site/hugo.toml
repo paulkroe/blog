@@ -1,4 +1,6 @@
 baseURL = "https://paulkroe.github.io/"
+canonifyURLs = true
+
 defaultContentLanguage = "en"
 enableEmoji = true
 enableRobotsTXT = true
