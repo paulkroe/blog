@@ -64,7 +64,7 @@ title = "hi, paul here"
             "<p>I'm passionate about machine learning, with a particular focus on (model-based) reinforcement learning. My current research explores causal reinforcement learning.</p>" +
             "<p>I'm also interested in AI safety. At the <a href='https://www.cualignment.org/' target='_blank' style='color: #007acc; text-decoration: underline;'>Columbia AI Alignment Club</a>, I help organize research efforts and projects centered around making AI systems safer, more reliable, and better understood. " +
             "Personally, I'm working on mechanistic interpretability trying to understand neural network internals.</p>" +
-            "<p>If you would like to discuss any of these topics, would like to collaborate, or just have a chat, feel free to reach out at firstname[dot]kroeger[at]columbia[dot]edu.</p>" +
+            "<p>If you would like to discuss any of these topics, would like to collaborate, or just have a chat, feel free to reach out at paul[dot]kroeger[at]columbia[dot]edu.</p>" +
             "<p>I completed my undergraduate degree in Mathematics at ETH Zürich and am currently pursuing a Master's in Computer Science at Columbia University.</p>";        }
       });
     </script>
