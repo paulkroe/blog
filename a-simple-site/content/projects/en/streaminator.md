@@ -4,7 +4,7 @@ date: 2025-05-08T16:53:53-04:00
 # image: "/images/streaminator_pipeline.png"
 lastmod: 2025-05-08
 showTableOfContents: false
-tags: ["ml","hpml"]
+tags: ["ml","high-perf-ml"]
 title: "Streaminator: Multi-Answer Speculative Decoding"
 type: "post"
 ---
